@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <link href="index.css" rel="stylesheet" />
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <!--this is the title-->
+        <div class="l-title">
+            <img src="assets/logo.jpg">
+            <form action="/catalog.php" target="view" method="get">
+                <div class="search-container">
+                    <p>Search:</p>
+                    <input type="text" name="search_text">
+                </div>
+                <div class="search-range-container">
+                    <div class="min-search-range-row">
+                        <div class="min-max">
+                            <p>Min: </p>
+                        </div>
+                        <div class="range_input">
+                            <input name = "search_min" type="number" name="quantity" min="0" step="any">
+                        </div>
+                    </div>
+                    <div class="max-search-range-row">
+                        <div class="min-max">
+                            <p>Max: </p>
+                        </div>
+                        <div class="range_input">
+                            <input name = "search_max" type="number" name="quantity" min="1" step="any">
+                        </div>
+                        <div class="submit-button-container">
+                            <button class="submit-button" type='submit'>SEARCH</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--This is the main page-->
+        <div class="l-site">
+            <!--this is the navigation bar on the left side-->
+
+            <div class="l-nav">
+                <nav class="nav">
+                    <ul>
+                        <li class="collapsible"><button>Food</button></li>
+                            <div class="content">
+                                <a href="catalog.php?category=Frozen" target="view">Frozen</a>
+                                <a href="catalog.php?category=Hot" target="view">Hot</a>
+                                <a href="catalog.php?category=Fresh Produce" target="view">Fresh Produce</a>
+                                <a href="catalog.php?category=Snacks" target="view">Snacks</a>
+                            </div>
+                        <li class="collapsible"><button>Beverages</button></li>
+                            <div class="content">
+                                <a href="catalog.php?category=Coffee/Tea" target="view">Coffee/Tea</a>
+                            </div>
+                        <li class="collapsible"><button>Dairy</button></li>
+                            <div class="content">
+                                <a href="catalog.php?category=Cheese" target="view">Cheese</a>
+                            </div>
+                        <li class="collapsible"><button>Pet</button></li>
+                            <div class="content">
+                                <a href="catalog.php?category=Dog" target="view">Dog</a>
+                                <a href="catalog.php?category=Bird" target="view">Bird</a>
+                                <a href="catalog.php?category=Cat" target="view">Cat</a>
+                                <a href="catalog.php?category=Fish" target="view">Fish</a>
+                            </div>
+                        <li class="collapsible"><button>Household</button></li>
+                            <div class="content">
+                                <a href="catalog.php?category=Cleaning Supplies" target="view">Cleaning Supplies</a>
+                                <a href="catalog.php?category=Detergent" target="view">Detergent</a>
+                                <a href="catalog.php?category=Medication" target="view">Medication</a>
+                                <a href="catalog.php?category=Personal Care" target="view">Personal Care</a>
+                            </div>
+                    </ul>
+                </nav>
+            </div>
+            <script>sidebar_collapse();</script>
+            <div class="l-page">
+                <div class="l-main">
+                    <div class="iframe-container">
+                        <iframe name='view' id="view-frame" src="home.php" frameborder=0></iframe>
+                    </div>
+                </div>
+                <div class="l-cart">
+                    <div class="cart-container">
+                        <div class="iframe-container">
+                            <iframe id="cart-frame" src="cart/cart.php" frameborder=0></iframe>
+                        </div>
+                    </div>
+                    <div class="checkout-container">
+                        <iframe id="checkout-frame" src="checkout.php" frameborder=0></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </body>
+            
+            <!-- DATABASE STUFF -->
+            <!-- mysql -h awseb-e-8ximt7vxkm-stack-awsebrdsdatabase-moyn11a2j8dh.cmi9bqussbyd.us-east-1.rds.amazonaws.com -u username -p -->
+            <!-- password -->
+            <!-- use assignment1; -->
+            <!-- select * from products; -->
+            
+            <!-- product_id; product_name; unit_price; unit_quantity; in_stock -->

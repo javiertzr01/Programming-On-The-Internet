@@ -1,0 +1,283 @@
+:root {
+  --break-medium: 980px;
+  --nav-width: 15%;
+  --site-width: 1600px;
+  --title-height: 12%;
+  --cart-height: 20%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: lighten(#3a4043, 15%);
+  font-family: "Open Sans", sans-serif;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex; /* remove extra space below image */
+  margin: auto;
+}
+
+.l-title {
+  position: fixed;
+  height: var(--title-height);
+  /*background: #354b57;*/
+  background: #FFFFFF;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.search-container{
+  position: absolute;
+  width: 25%;
+  height: 40%;
+  right: 0;
+  top: 0;
+}
+
+.search-container p{
+  margin: auto;
+}
+
+.search-container input{
+  width: 70%;
+  height: 60%;
+  margin: auto;
+}
+
+.search-range-container{
+  position: absolute;
+  width: 25%;
+  height: 50%;
+  right: 0;
+  top: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.min-search-range-row{
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.max-search-range-row{
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.min-max{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.min-max p {
+  margin: 0px;
+  width: 40px; /* Adjust this value as needed */
+}
+
+.range_input{
+  position: absolute;
+  left: 40px;
+  height: 100%;
+  width: 40%;
+}
+
+.range_input input {
+  width: 30px; /* Adjust this value as needed */
+  height: 20px;
+}
+
+.submit-button-container{
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  width: 30%;
+  height: 100%;
+}
+
+.submit-button{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+
+
+.l-site {
+  margin: 0 auto;
+  max-width: var(--site-width);
+  height: calc(100% - var(--title-height));
+  position: relative;
+  top: var(--title-height);
+  z-index: 1;
+}
+
+.l-site:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  display: block;
+  background: #3a4043;
+  z-index: 1;
+}
+
+.l-nav {
+  position: absolute;
+  width: var(--nav-width);
+  height: 100%;
+  display: block;
+  background: #3a4043;
+  left: 0;
+  z-index: 2;
+}
+
+.l-page {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - var(--nav-width));
+  left: var(--nav-width);
+  margin: auto;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 1px 0 25px rgba(0, 0, 0, 0.25);
+  transition: 0.35s;
+}
+
+.l-main{
+  position: absolute;
+  height: calc(100% - var(--cart-height));
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+}
+
+.l-cart {
+  position: absolute;
+  height: var(--cart-height);
+  width: 100%;
+  background: #fff;
+  bottom: 0;
+  z-index: 2;
+}
+
+.nav {
+  width: calc(var(--nav-width) - 60px);
+  position: fixed;
+  top: var(--title-height);
+  bottom: 0;
+  margin: 0;
+  padding: 30px;
+  overflow: auto;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav li {
+  margin: 0;
+  padding: 0;
+  transition: 0.25s;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 800;
+  display: block;
+  padding-top: 7px;
+}
+
+.collapsible button {
+  background-color: #3a4043;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 15px;
+}
+
+.collapsible button:hover {
+  opacity: 0.7;
+}
+
+.content {
+  padding: 0 18px;
+  background-color: #3a4043;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.content a:hover{
+  opacity: 0.7;
+}
+
+.iframe-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.cart-container{
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  left: 0;
+  overflow-y: auto;
+}
+.checkout-container{
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  right:0;
+}
+
+.checkout-container iframe{
+  width: 100%;
+  height: 100%;
+}

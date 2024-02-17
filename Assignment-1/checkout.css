@@ -1,0 +1,22 @@
+.page-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-container:not(.disabled):active {
+  transform: translateY(2px);
+}
+
+.page-container.disabled {
+  background-color: #9c9a9a;
+  color: #a9a9a9;
+  pointer-events: none;
+}

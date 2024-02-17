@@ -1,0 +1,104 @@
+.remove-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.remove-btn::before {
+  content: '-';
+}
+
+.remove-btn.disabled {
+  pointer-events: none;
+  background: grey;
+  /*transform: scale(1);*/
+}
+
+.frame-container{
+  height: 100%;
+  width: 100%;
+}
+
+.table-container{
+  position: absolute;
+  left:0;
+  height: 100%;
+  width: 75%;
+}
+
+.table-container table {
+  position: relative;
+  /*height: 100%;*/
+  width: 100%;
+}
+
+tr:hover td:not(:last-child){
+  background-color: #D6EEEE;
+}
+
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.no-hover:hover{
+  background-color: transparent;
+}
+
+.no-style {
+  border: none;
+  background-color: transparent;
+}
+
+.total-container{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 75%;
+  /*height: 124px;*/
+  width: 25%;
+  height:100%;
+  /*color: #fff;*/
+  /*background-color: red;*/
+}
+
+.total-header{
+  position: absolute;
+  top: 0;
+  height: 41.3px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total-price{
+  position: absolute;
+  top: 41.3px;
+  height: 41.3px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: red;*/
+}
+
+.clear-cart{
+  position: absolute;
+  top: 82.7px;
+  height: 41.3px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: red;*/
+}

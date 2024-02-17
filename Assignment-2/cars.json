@@ -1,0 +1,122 @@
+[
+    {
+        "category": "sedan",
+        "availability": false,
+        "brand": "Toyota",
+        "model": "Camry",
+        "model year": 2022,
+        "mileage": 5000,
+        "fuel-type": "petrol",
+        "seats": 5,
+        "price\/day": 50,
+        "description": "A reliable and comfortable sedan."
+    },
+    {
+        "category": "SUV",
+        "availability": true,
+        "brand": "Ford",
+        "model": "Explorer",
+        "model year": 2021,
+        "mileage": 10000,
+        "fuel-type": "petrol",
+        "seats": 7,
+        "price\/day": 80,
+        "description": "A spacious and powerful SUV."
+    },
+    {
+        "category": "hatchback",
+        "availability": false,
+        "brand": "Honda",
+        "model": "Civic",
+        "model year": 2020,
+        "mileage": 8000,
+        "fuel-type": "petrol",
+        "seats": 5,
+        "price\/day": 45,
+        "description": "A compact and fuel-efficient hatchback."
+    },
+    {
+        "category": "pickup",
+        "availability": true,
+        "brand": "Chevrolet",
+        "model": "Silverado",
+        "model year": 2019,
+        "mileage": 15000,
+        "fuel-type": "petrol",
+        "seats": 5,
+        "price\/day": 90,
+        "description": "A rugged and versatile pickup truck."
+    },
+    {
+        "category": "convertible",
+        "availability": true,
+        "brand": "Mazda",
+        "model": "MX-5_Miata",
+        "model year": 2023,
+        "mileage": 2000,
+        "fuel-type": "petrol",
+        "seats": 2,
+        "price\/day": 70,
+        "description": "A sporty and fun convertible for open-air driving."
+    },
+    {
+        "category": "SUV",
+        "availability": true,
+        "brand": "Jeep",
+        "model": "Wrangler",
+        "model year": 2022,
+        "mileage": 6000,
+        "fuel-type": "petrol",
+        "seats": 4,
+        "price\/day": 85,
+        "description": "An off-road capable SUV with iconic design."
+    },
+    {
+        "category": "compact",
+        "availability": true,
+        "brand": "Volkswagen",
+        "model": "Golf",
+        "model year": 2021,
+        "mileage": 7000,
+        "fuel-type": "diesel",
+        "seats": 5,
+        "price\/day": 40,
+        "description": "A nimble and efficient compact car."
+    },
+    {
+        "category": "minivan",
+        "availability": true,
+        "brand": "Chrysler",
+        "model": "Pacifica",
+        "model year": 2022,
+        "mileage": 4000,
+        "fuel-type": "hybrid",
+        "seats": 7,
+        "price\/day": 75,
+        "description": "A family-friendly minivan with advanced features."
+    },
+    {
+        "category": "compact",
+        "availability": true,
+        "brand": "Honda",
+        "model": "Civic",
+        "model year": 2021,
+        "mileage": 9000,
+        "fuel-type": "petrol",
+        "seats": 5,
+        "price\/day": 55,
+        "description": "A popular and reliable compact car."
+    },
+    {
+        "category": "SUV",
+        "availability": true,
+        "brand": "Toyota",
+        "model": "Rav4",
+        "model year": 2020,
+        "mileage": 12000,
+        "fuel-type": "hybrid",
+        "seats": 5,
+        "price\/day": 70,
+        "description": "A versatile and fuel-efficient SUV."
+    }
+]

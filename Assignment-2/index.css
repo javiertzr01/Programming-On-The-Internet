@@ -1,0 +1,114 @@
+:root {
+  --break-medium: 980px;
+  --site-width: 1600px;
+  --title-height: 12%;
+}
+
+.l-title {
+  position: fixed;
+  height: var(--title-height);
+  background: #000000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  align-items: center; /* Vertically center elements */
+}
+
+.l-title-logo {
+  height: 100%;
+  width: 20%;
+}
+
+.l-title-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.l-title-text {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center; /* Vertically center text */
+  justify-content: center; /* Horizontally center text */
+}
+
+.title-text {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+}
+
+.l-title-car-reservation-button {
+  height: 100%;
+  display: flex;
+  align-items: center; /* Vertically center button */
+  justify-content: center; /* Align button to the right */
+  width: 20%;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: darkblue;
+}
+
+.l-container {
+  position: relative;
+  top: var(--title-height);
+  width: 100%;
+  height: calc(100% - var(--title-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+table {
+  width: 80%; /* Set the width to 80% of the container */
+  margin: 0 auto; /* Center the table horizontally */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: none; /* Remove cell borders */
+}
+
+/* Image styling */
+table img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* Remove background colors */
+tr:nth-child(even) {
+  background-color: transparent;
+}
+
+tr:nth-child(odd) {
+  background-color: transparent;
+}
